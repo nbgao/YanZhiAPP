@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">YanZhi APP</string>
+    <string name="LOGO">研之</string>
+    <string name="yanzhi">YANZHI</string>
+    <string name="sign">-研之有理-</string>
+    <string name="LOGIN">登 录</string>
+    <string name="REGISTER">注 册</string>
+</resources>
