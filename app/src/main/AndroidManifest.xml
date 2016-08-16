@@ -32,6 +32,10 @@
 
         </activity>
 
+        <activity android:name=".Mine.MineActivity">
+
+        </activity>
+
     </application>
 
 </manifest>
