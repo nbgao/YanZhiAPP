@@ -8,9 +8,7 @@ import android.view.ViewGroup;
 
 import com.example.hijoy.yanzhiapp.R;
 
-/**
- * Created by Pengbing on 2016/8/17.
- */
+
 public class MinePageFragment extends Fragment {
 
 
@@ -29,8 +27,8 @@ public class MinePageFragment extends Fragment {
             public void onClick(View view) {
                 getFragmentManager()
                         .beginTransaction()
-                        .addToBackStack(null)
                         .replace(R.id.fragment_mine,new SettingPageFragment())
+                        .addToBackStack(null)
                         .commit();
             }
         });

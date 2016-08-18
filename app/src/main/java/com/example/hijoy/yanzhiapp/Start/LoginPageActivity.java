@@ -12,8 +12,6 @@ import android.widget.Toast;
 import com.example.hijoy.yanzhiapp.Mine.MineActivity;
 import com.example.hijoy.yanzhiapp.R;
 
-import static android.text.Html.fromHtml;
-
 
 public class LoginPageActivity extends StartPageActivity implements View.OnClickListener{
 
@@ -26,7 +24,7 @@ public class LoginPageActivity extends StartPageActivity implements View.OnClick
         setContentView(R.layout.activity_login_page);
 
         TextView tv_forget = (TextView)findViewById(R.id.tv_forget);
-        tv_forget.setText(fromHtml("<u>"+"忘记密码?"+"</u>"));
+        tv_forget.setText(("<u>"+"忘记密码?"+"</u>"));
 
         et_phone = (EditText)findViewById(R.id.et_phone);
         et_password = (EditText)findViewById(R.id.et_password);
