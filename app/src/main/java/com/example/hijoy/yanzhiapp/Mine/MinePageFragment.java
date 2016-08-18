@@ -25,9 +25,10 @@ public class MinePageFragment extends Fragment {
         view.findViewById(R.id.ib_setting).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                SettingPageFragment settingPageFragment = new SettingPageFragment();
                 getFragmentManager()
                         .beginTransaction()
-                        .replace(R.id.fragment_mine,new SettingPageFragment())
+                        .replace(R.id.fragment_mine,settingPageFragment)
                         .addToBackStack(null)
                         .commit();
             }
