@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+        <Preference
+            android:key="ID_manager"
+            android:title="账号管理"
+            android:widgetLayout="@layout/icon_enter"
+            />
+
+        <Preference
+            android:key="message_alert"
+            android:title="消息提醒"
+            android:widgetLayout="@layout/icon_enter"
+            />
+
+        <Preference
+            android:key="font_size"
+            android:title="字体大小"
+            android:widgetLayout="@layout/icon_enter"
+            />
+
+
+        <Preference
+            android:key="evaluate_center"
+            android:title="反馈评价中心"
+            android:widgetLayout="@layout/icon_enter"
+            />
+
+        <Preference
+            android:key="check_update"
+            android:title="检测更新"
+            android:widgetLayout="@layout/icon_enter"
+            />
+
+        <Preference
+            android:key="clear_flow"
+            android:title="清除流量"
+
+            />
+
+        <SwitchPreference
+            android:key="night_mode"
+            android:title="夜间模式"
+
+            />
+
+
+</PreferenceScreen>

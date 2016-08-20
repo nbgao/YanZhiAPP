@@ -7,7 +7,6 @@
     android:elevation="10dp"
     >
 
-
     <ImageButton
         android:id="@+id/ib_back"
         android:layout_width="15dp"
@@ -23,7 +22,7 @@
         android:layout_weight="1"
         android:layout_gravity="center"
         android:gravity="center"
-        android:text="设置"
+        android:text="vip会员"
         android:textSize="20sp"
         android:textColor="#5E5E5E"
         />
@@ -37,4 +36,5 @@
         android:layout_gravity="center"
         android:background="#FFFFFF"
         />
+
 </LinearLayout>

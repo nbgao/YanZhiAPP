@@ -14,7 +14,6 @@ public class MineActivity extends LoginPageActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mine_page);
 
-
     }
 
 
