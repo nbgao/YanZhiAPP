@@ -7,21 +7,222 @@
 
     <include layout="@layout/setting_title_bar" />
 
-    <TextView
-        android:layout_width="wrap_content"
+
+    <RelativeLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:layout_gravity="center"
-        android:text="Fragment Setting"
-        android:textSize="30sp"
-        android:textColor="#000000"
+        android:layout_marginTop="12dp"
+        android:background="#FFFFFF"
+        >
+
+        <RelativeLayout
+            android:id="@+id/message_alert"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/id_manager"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="账号管理"
+                android:textSize="18sp"
+                android:textColor="#7A7A7A"
+                />
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/fast_forward"
+                />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/id_manager"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="消息提醒"
+                android:textSize="18sp"
+                android:textColor="#7A7A7A"
+                />
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/fast_forward"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/font_size"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/message_alert"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="字体大小"
+                android:textSize="18sp"
+                android:textColor="#7A7A7A"
+                />
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/fast_forward"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/evaluation_center"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/font_size"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="反馈评价中心"
+                android:textSize="18sp"
+                android:textColor="#7A7A7A"
+                />
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/fast_forward"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/check_update"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/evaluation_center"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="检查更新"
+                android:textSize="18sp"
+                android:textColor="#7A7A7A"
+                />
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/fast_forward"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/clear_netflow"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/check_update"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="清除流量"
+                android:textSize="18sp"
+                android:textColor="#7A7A7A"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="16dp"
+                android:text="0MB"
+                android:textSize="16sp"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/night_mode"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/clear_netflow"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="夜间模式"
+                android:textSize="18sp"
+                android:textColor="#7A7A7A"
+                />
+
+            <android.support.v7.widget.SwitchCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="16dp"
+                android:checked="true"
+                android:theme="@style/Switch"
+                />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="退出此账号"
+        android:textSize="18sp"
+        android:textColor="#EB0101"
+        android:background="#FFFFFF"
         />
-
-    <ListView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-
-    </ListView>
-
 
 </LinearLayout>
