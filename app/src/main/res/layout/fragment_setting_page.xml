@@ -50,7 +50,7 @@
             android:background="@android:color/darker_gray" />
 
         <RelativeLayout
-            android:id="@+id/message_alert"
+            android:id="@+id/message_notification"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_below="@+id/id_manager"
@@ -80,14 +80,14 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="1px"
-            android:layout_below="@+id/message_alert"
+            android:layout_below="@+id/message_notification"
             android:background="@android:color/darker_gray" />
 
         <RelativeLayout
             android:id="@+id/font_size"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:layout_below="@+id/message_alert"
+            android:layout_below="@+id/message_notification"
             android:clickable="true"
             android:gravity="center_vertical"
             >

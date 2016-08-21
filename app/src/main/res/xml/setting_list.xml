@@ -9,7 +9,7 @@
             />
 
         <Preference
-            android:key="message_alert"
+            android:key="message_notification"
             android:title="消息提醒"
             android:widgetLayout="@layout/icon_enter"
             />
