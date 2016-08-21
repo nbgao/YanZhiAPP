@@ -13,13 +13,13 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
         android:background="#FFFFFF"
+        android:elevation="1dp"
         >
 
         <RelativeLayout
-            android:id="@+id/message_alert"
+            android:id="@+id/id_manager"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:layout_below="@+id/id_manager"
             android:clickable="true"
             android:gravity="center_vertical"
             >
@@ -43,11 +43,17 @@
 
         </RelativeLayout>
 
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/id_manager"
+            android:background="@android:color/darker_gray" />
 
         <RelativeLayout
-            android:id="@+id/id_manager"
+            android:id="@+id/message_alert"
             android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:layout_below="@+id/id_manager"
             android:clickable="true"
             android:gravity="center_vertical"
             >
@@ -70,6 +76,12 @@
                 />
 
         </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/message_alert"
+            android:background="@android:color/darker_gray" />
 
         <RelativeLayout
             android:id="@+id/font_size"
@@ -99,6 +111,12 @@
 
         </RelativeLayout>
 
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/font_size"
+            android:background="@android:color/darker_gray" />
+
         <RelativeLayout
             android:id="@+id/evaluation_center"
             android:layout_width="match_parent"
@@ -127,6 +145,12 @@
 
         </RelativeLayout>
 
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/evaluation_center"
+            android:background="@android:color/darker_gray" />
+
         <RelativeLayout
             android:id="@+id/check_update"
             android:layout_width="match_parent"
@@ -154,6 +178,12 @@
                 />
 
         </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/check_update"
+            android:background="@android:color/darker_gray" />
 
         <RelativeLayout
             android:id="@+id/clear_netflow"
@@ -184,6 +214,12 @@
 
         </RelativeLayout>
 
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/clear_netflow"
+            android:background="@android:color/darker_gray" />
+
         <RelativeLayout
             android:id="@+id/night_mode"
             android:layout_width="match_parent"
@@ -202,8 +238,8 @@
                 android:textColor="#7A7A7A"
                 />
 
-            <android.support.v7.widget.SwitchCompat
-                android:layout_width="match_parent"
+            <Switch
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
                 android:layout_marginEnd="16dp"
@@ -223,6 +259,7 @@
         android:textSize="18sp"
         android:textColor="#EB0101"
         android:background="#FFFFFF"
+        android:elevation="1dp"
         />
 
 </LinearLayout>

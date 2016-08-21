@@ -9,13 +9,306 @@
 
     <include layout="@layout/mine_title_bar" />
 
-    <TextView
-        android:layout_width="wrap_content"
+    <RelativeLayout
+        android:id="@+id/user"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="12dp"
+        android:background="#FFFFFF"
+        android:elevation="1dp"
+        >
+
+        <ImageButton
+            android:id="@+id/user_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/logo"
+            />
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="15dp"
+            android:text="用户ID"
+            android:textSize="20sp"
+            android:textColor="#585858"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="45dp"
+            android:text="编辑或查看个人资料"
+            android:textSize="14sp"
+            android:textColor="#9E9E9E"
+            />
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/fast_forward"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:layout_gravity="center"
-        android:text="Fragment Mine"
-        android:textSize="30sp"
-        android:textColor="#000000"
-        />
+        android:layout_marginTop="16dp"
+        android:background="#FFFFFF"
+        android:elevation="1dp"
+        android:clickable="true"
+        >
+
+        <RelativeLayout
+            android:id="@+id/my_focus"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            >
+
+            <ImageButton
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/ribbon"
+                />
+        
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:text="我的关注"
+                android:textSize="18sp"
+                android:textColor="#7A7A7A"
+            />
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/fast_forward"
+                />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/my_focus"
+            android:background="@android:color/darker_gray" />
+
+        <RelativeLayout
+            android:id="@+id/my_collection"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/my_focus"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            >
+
+            <ImageButton
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/star"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:text="我的收藏"
+                android:textSize="18sp"
+                android:textColor="#7A7A7A"
+                />
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/fast_forward"
+                />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/my_collection"
+            android:background="@android:color/darker_gray" />
+
+        <RelativeLayout
+            android:id="@+id/my_script"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/my_collection"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            >
+
+            <ImageButton
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/menu"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:text="我的草稿"
+                android:textSize="18sp"
+                android:textColor="#7A7A7A"
+                />
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/fast_forward"
+                />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/my_script"
+            android:background="@android:color/darker_gray" />
+
+        <RelativeLayout
+            android:id="@+id/recent_views"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/my_script"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            >
+
+            <ImageButton
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/clock"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:text="最近浏览"
+                android:textSize="18sp"
+                android:textColor="#7A7A7A"
+                />
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/fast_forward"
+                />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/recent_views"
+            android:background="@android:color/darker_gray" />
+
+        <RelativeLayout
+            android:id="@+id/personal_wallet"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/recent_views"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            >
+
+            <ImageButton
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/ipad"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:text="个人钱包"
+                android:textSize="18sp"
+                android:textColor="#7A7A7A"
+                />
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/fast_forward"
+                />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/personal_wallet"
+            android:background="@android:color/darker_gray" />
+
+        <RelativeLayout
+            android:id="@+id/my_vip"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/personal_wallet"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            >
+
+            <ImageButton
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/v"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:text="我的收藏"
+                android:textSize="18sp"
+                android:textColor="#7A7A7A"
+                />
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/fast_forward"
+                />
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
 </LinearLayout>
