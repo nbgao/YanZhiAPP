@@ -5,7 +5,6 @@
     android:background="#EFF0F4"
     android:id="@+id/fragment_mine"
     >
-    
 
     <include layout="@layout/mine_title_bar" />
 

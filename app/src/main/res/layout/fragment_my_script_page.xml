@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFF0F4">
+
+    <include layout="@layout/my_script_title_bar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="12dp"
+        android:background="#FFFFFF"
+        android:elevation="1dp"
+        >
+
+        <RelativeLayout
+            android:id="@+id/script1"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+
+            android:clickable="true"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="16dp"
+                android:text="标题-正文"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:layout_marginStart="16dp"
+                android:text="周五 15：46"
+                android:textSize="14sp"
+                android:textColor="#8D8D8D"
+                />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/script1"
+            android:background="@android:color/darker_gray" />
+
+    </RelativeLayout>
+
+</LinearLayout>

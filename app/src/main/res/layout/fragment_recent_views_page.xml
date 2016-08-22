@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFF0F4">
+
+    <include layout="@layout/recent_views_title_bar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="12dp"
+        android:background="#FFFFFF"
+        android:elevation="1dp"
+        >
+
+        <RelativeLayout
+            android:id="@+id/recent_views1"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:clickable="true"
+            >
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/recent_views1"
+            android:background="@android:color/darker_gray" />
+
+        <RelativeLayout
+            android:id="@+id/recent_views2"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_below="@+id/recent_views1"
+            android:clickable="true"
+            >
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/recent_views2"
+            android:background="@android:color/darker_gray" />
+
+    </RelativeLayout>
+
+</LinearLayout>
