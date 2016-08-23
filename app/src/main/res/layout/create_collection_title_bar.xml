@@ -7,20 +7,18 @@
     android:elevation="5dp"
     >
 
-    <ImageButton
-        android:id="@+id/ib_back"
-        android:layout_width="15dp"
-        android:layout_height="30dp"
+    <Button
+        android:id="@+id/btn_delete_collection"
+        android:layout_width="30dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
         android:layout_gravity="center"
-        android:layout_marginStart="15dp"
-        android:background="@drawable/back"
+        android:text="取消"
+        android:textSize="14sp"
+        android:textColor="#44FFBB"
+        android:background="#FFFFFF"
         />
 
-    <ImageView
-        android:layout_width="10dp"
-        android:layout_height="30dp"
-        android:layout_gravity="center"
-        />
 
     <TextView
         android:layout_width="0dp"
@@ -28,18 +26,18 @@
         android:layout_weight="1"
         android:layout_gravity="center"
         android:gravity="center"
-        android:text="最近浏览"
+        android:text="创建收藏夹"
         android:textSize="20sp"
         android:textColor="#5E5E5E"
         />
 
     <Button
-        android:id="@+id/btn_recent_views_edit"
+        android:id="@+id/btn_edit"
         android:layout_width="30dp"
         android:layout_height="match_parent"
         android:layout_marginEnd="10dp"
         android:layout_gravity="center"
-        android:text="编辑"
+        android:text="完成"
         android:textSize="14sp"
         android:textColor="#44FFBB"
         android:background="#FFFFFF"
