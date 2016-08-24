@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFF0F4">
+
+    <include layout="@layout/edit_education_title_bar" />
+
+    <EditText
+        android:layout_width="360dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:layout_gravity="center"
+        android:text=" 收藏夹标题，最多15字"
+        android:textSize="18sp"
+        android:textColor="#CACACA"
+        android:background="#FFFFFF"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="#FFFFFF"
+        android:elevation="1dp"
+        >
+
+        <RelativeLayout
+            android:id="@+id/reflect_problem"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="反馈问题"
+                android:textSize="18sp"
+                android:textColor="#7A7A7A"
+                />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/reflect_problem"
+            android:background="@android:color/darker_gray" />
+
+        <RelativeLayout
+            android:id="@+id/suggestion_evaluation"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/reflect_problem"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="意见评价"
+                android:textSize="18sp"
+                android:textColor="#7A7A7A"
+                />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
