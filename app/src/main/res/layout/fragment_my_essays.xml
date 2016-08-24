@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="#EFF0F4">
 
-    <include layout="@layout/my_essay_title_bar" />
+    <include layout="@layout/my_essays_title_bar" />
 
     <RelativeLayout
         android:layout_width="match_parent"

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFF0F4"
+    android:id="@+id/fragment_mine"
+    >
+
+    <include layout="@layout/edit_user_information_title_bar" />
+
+    <RelativeLayout
+        android:id="@+id/user"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginTop="12dp"
+        android:background="#FFFFFF"
+        android:elevation="1dp"
+        >
+
+            <ImageButton
+                android:id="@+id/user_image"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="16dp"
+                android:background="@drawable/logo"
+                />
+
+            <TextView
+                android:id="@+id/change_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="70dp"
+                android:text="更换头像"
+                android:textSize="12sp"
+                android:textColor="#2b8c4f"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="90dp"
+                android:layout_centerVertical="true"
+                android:hint="用户名"
+                android:textColorHint="#5A5A5A"
+                android:textSize="18sp"
+                />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@id/user_info1"
+            android:background="@android:color/darker_gray" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="#FFFFFF"
+        android:elevation="1dp"
+        android:clickable="true"
+        >
+
+        <LinearLayout
+            android:id="@+id/my_sex"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            >
+
+        
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="性别"
+                android:textSize="18sp"
+                android:textColor="#7A7A7A"
+            />
+
+            <TextView
+                android:id="@+id/sex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="男"
+                android:textSize="18sp"
+                android:textColor="#5A5A5A"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/my_sex"
+            android:background="@android:color/darker_gray" />
+
+        <LinearLayout
+            android:id="@+id/my_address"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/my_sex"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            >
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="居住地"
+                android:textSize="18sp"
+                android:textColor="#7A7A7A"
+                android:clickable="true"
+                />
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="浙江杭州"
+                android:textSize="18sp"
+                android:textColor="#5A5A5A"
+                android:clickable="true"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="+ 添加教育信息"
+        android:textSize="18sp"
+        android:background="#FFFFFF"
+        android:elevation="1dp"
+        />
+
+</LinearLayout>

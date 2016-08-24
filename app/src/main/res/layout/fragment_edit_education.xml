@@ -7,59 +7,54 @@
 
     <include layout="@layout/edit_education_title_bar" />
 
-    <EditText
-        android:layout_width="360dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="12dp"
-        android:layout_gravity="center"
-        android:text=" 收藏夹标题，最多15字"
-        android:textSize="18sp"
-        android:textColor="#CACACA"
-        android:background="#FFFFFF"
-        />
-
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="12dp"
         android:background="#FFFFFF"
         android:elevation="1dp"
         >
 
-        <RelativeLayout
-            android:id="@+id/reflect_problem"
+        <LinearLayout
+            android:id="@+id/school"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:clickable="true"
             android:gravity="center_vertical"
+            android:background="@drawable/corners_edge"
             >
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
-                android:text="反馈问题"
+                android:text="学校名称"
                 android:textSize="18sp"
                 android:textColor="#7A7A7A"
-                />
+                android:id="@+id/textView" />
 
             <EditText
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:id="@+id/school_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:hint="请输入完整的学校名称"
+                android:textColorHint="#CACACA"
+                android:textSize="16sp"
+                />
 
-        </RelativeLayout>
+        </LinearLayout>
 
         <View
             android:layout_width="match_parent"
             android:layout_height="1px"
-            android:layout_below="@+id/reflect_problem"
+            android:layout_below="@+id/school"
             android:background="@android:color/darker_gray" />
 
-        <RelativeLayout
-            android:id="@+id/suggestion_evaluation"
+        <LinearLayout
+            android:id="@+id/major"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:layout_below="@+id/reflect_problem"
+            android:layout_below="@+id/school"
             android:clickable="true"
             android:gravity="center_vertical"
             >
@@ -68,16 +63,22 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
-                android:text="意见评价"
+                android:text="专业名称"
                 android:textSize="18sp"
                 android:textColor="#7A7A7A"
                 />
 
             <EditText
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:id="@+id/major_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:hint="请输入完整的专业名称"
+                android:textColorHint="#CACACA"
+                android:textSize="16sp"
+                />
 
-        </RelativeLayout>
+        </LinearLayout>
 
     </RelativeLayout>
 
