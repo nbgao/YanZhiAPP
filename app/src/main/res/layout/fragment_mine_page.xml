@@ -17,7 +17,7 @@
         android:elevation="1dp"
         >
 
-        <ImageButton
+        <ImageView
             android:id="@+id/user_image"
             android:layout_width="50dp"
             android:layout_height="50dp"

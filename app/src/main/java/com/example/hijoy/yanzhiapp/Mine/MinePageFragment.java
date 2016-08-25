@@ -25,23 +25,27 @@ public class MinePageFragment extends Fragment {
         view.findViewById(R.id.ib_setting).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                SettingPageFragment settingPageFragment = new SettingPageFragment();
                 getFragmentManager()
                         .beginTransaction()
-                        .replace(R.id.fragment_container,settingPageFragment)
+                        .replace(R.id.fragment_container,new SettingPageFragment())
                         .addToBackStack(null)
                         .commit();
             }
         });
 
-        /*
-        view.findViewById(R.id.my_vip).setOnClickListener(new View.OnClickListener() {
+
+        view.findViewById(R.id.user).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                getFragmentManager().beginTransaction().replace(R.id.fragment_mine,new fr)
+                getFragmentManager()
+                        .beginTransaction()
+                        .replace(R.id.fragment_container,new UserPageFragment())
+                        .addToBackStack(null)
+                        .commit();
+
             }
         });
-        */
+
 
         return view;
     }

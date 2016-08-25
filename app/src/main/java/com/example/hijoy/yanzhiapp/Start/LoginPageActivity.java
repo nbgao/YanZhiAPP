@@ -50,7 +50,7 @@ public class LoginPageActivity extends StartPageActivity implements View.OnClick
                     Intent intent = new Intent(LoginPageActivity.this, MineActivity.class);
                     startActivity(intent);
                     Toast.makeText(LoginPageActivity.this,"Login successfully",Toast.LENGTH_LONG).show();
-                    this.finish();
+                    finish();
                 }else{
                     Toast.makeText(LoginPageActivity.this,"Wrong",Toast.LENGTH_LONG).show();
                 }
