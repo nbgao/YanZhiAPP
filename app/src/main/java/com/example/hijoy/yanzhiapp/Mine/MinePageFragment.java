@@ -28,11 +28,21 @@ public class MinePageFragment extends Fragment {
                 SettingPageFragment settingPageFragment = new SettingPageFragment();
                 getFragmentManager()
                         .beginTransaction()
-                        .replace(R.id.fragment_mine,settingPageFragment)
+                        .replace(R.id.fragment_container,settingPageFragment)
                         .addToBackStack(null)
                         .commit();
             }
         });
+
+        /*
+        view.findViewById(R.id.my_vip).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                getFragmentManager().beginTransaction().replace(R.id.fragment_mine,new fr)
+            }
+        });
+        */
+
         return view;
     }
 

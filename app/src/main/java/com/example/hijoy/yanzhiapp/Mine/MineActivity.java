@@ -14,9 +14,20 @@ public class MineActivity extends LoginPageActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mine_page);
 
+        if(findViewById(R.id.fragment_container) != null){
+            if(savedInstanceState != null){
+                return;
+            }
+
+            MinePageFragment minePageFragment = new MinePageFragment();
+            minePageFragment.setArguments(getIntent().getExtras());
+            getSupportFragmentManager()
+                    .beginTransaction()
+                    .add(R.id.fragment_container,minePageFragment)
+                    .commit();
+
+        }
     }
-
-
 
 
 }

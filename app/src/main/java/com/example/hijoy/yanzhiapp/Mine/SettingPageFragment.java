@@ -26,6 +26,7 @@ public class SettingPageFragment extends Fragment {
                 getFragmentManager().popBackStack();
             }
         });
+
         return view;
     }
 
