@@ -47,13 +47,6 @@
                 android:textSize="18sp"
                 />
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1px"
-            android:layout_below="@id/user_info1"
-            android:background="@android:color/darker_gray" />
-
-
     </RelativeLayout>
 
     <RelativeLayout

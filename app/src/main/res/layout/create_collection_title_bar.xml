@@ -15,7 +15,7 @@
         android:layout_gravity="center"
         android:text="取消"
         android:textSize="14sp"
-        android:textColor="#44FFBB"
+        android:textColor="#65A78D"
         android:background="#FFFFFF"
         />
 
@@ -39,7 +39,7 @@
         android:layout_gravity="center"
         android:text="完成"
         android:textSize="14sp"
-        android:textColor="#44FFBB"
+        android:textColor="#65A78D"
         android:background="#FFFFFF"
         />
 

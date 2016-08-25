@@ -41,7 +41,7 @@
         android:layout_gravity="center"
         android:text="编辑"
         android:textSize="14sp"
-        android:textColor="#44FFBB"
+        android:textColor="#65A78D"
         android:background="#FFFFFF"
         />
 
