@@ -33,15 +33,16 @@
         android:textColor="#5E5E5E"
         />
 
-    <Button
+    <TextView
         android:id="@+id/btn_my_collection_edit"
         android:layout_width="30dp"
         android:layout_height="match_parent"
         android:layout_marginEnd="10dp"
-        android:layout_gravity="center"
+        android:gravity="center"
         android:text="编辑"
         android:textColor="#65A78D"
         android:background="#FFFFFF"
+        android:clickable="true"
         />
 
 </LinearLayout>

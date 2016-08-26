@@ -22,7 +22,7 @@
         android:layout_weight="1"
         android:layout_gravity="center"
         android:gravity="center"
-        android:text="设置"
+        android:text="VIP会员"
         android:textSize="20sp"
         android:textColor="#5E5E5E"
         />

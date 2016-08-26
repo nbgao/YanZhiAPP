@@ -7,16 +7,17 @@
     android:elevation="5dp"
     >
 
-    <Button
+    <TextView
         android:id="@+id/btn_delete_collection"
         android:layout_width="30dp"
         android:layout_height="match_parent"
         android:layout_marginStart="10dp"
-        android:layout_gravity="center"
+        android:gravity="center"
         android:text="删除"
         android:textSize="14sp"
         android:textColor="#FF1D1D"
         android:background="#FFFFFF"
+        android:clickable="true"
         />
 
 
@@ -31,16 +32,17 @@
         android:textColor="#5E5E5E"
         />
 
-    <Button
+    <TextView
         android:id="@+id/btn_edit"
         android:layout_width="30dp"
         android:layout_height="match_parent"
         android:layout_marginEnd="10dp"
-        android:layout_gravity="center"
+        android:gravity="center"
         android:text="编辑"
         android:textSize="14sp"
         android:textColor="#65A78D"
         android:background="#FFFFFF"
+        android:clickable="true"
         />
 
 </LinearLayout>
