@@ -6,7 +6,7 @@
     android:background="#EFF0F4"
     >
 
-    <include layout="@layout/id_manage_title_bar"  />
+    <include layout="@layout/id_manager_title_bar"  />
 
     <RelativeLayout
         android:layout_width="match_parent"
