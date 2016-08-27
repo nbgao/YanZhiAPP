@@ -17,30 +17,39 @@
         android:elevation="1dp"
         >
 
-            <ImageButton
-                android:id="@+id/user_image"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginStart="16dp"
-                android:background="@drawable/logo"
-                />
-
-            <TextView
+            <LinearLayout
                 android:id="@+id/change_image"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="18dp"
-                android:layout_marginTop="70dp"
-                android:text="更换头像"
-                android:textSize="12sp"
-                android:textColor="#2b8c4f"
-                />
+                android:layout_width="80dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="16dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/user_image"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/logo"
+                    />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="center_horizontal"
+                    android:text="更换头像"
+                    android:textSize="12sp"
+                    android:textColor="#2b8c4f"
+                    />
+            </LinearLayout>
 
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="90dp"
+                android:layout_marginStart="100dp"
                 android:layout_centerVertical="true"
                 android:hint="用户名"
                 android:textColorHint="#5A5A5A"

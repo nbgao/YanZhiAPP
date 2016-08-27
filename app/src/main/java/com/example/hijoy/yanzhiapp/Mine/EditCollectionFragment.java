@@ -10,7 +10,7 @@ import android.view.ViewGroup;
 import com.example.hijoy.yanzhiapp.R;
 
 
-public class IdManagerFragment extends Fragment implements View.OnClickListener{
+public class EditCollectionFragment extends Fragment implements View.OnClickListener{
 
     @Override
     public void onCreate(Bundle savedInstanceState){
@@ -19,10 +19,10 @@ public class IdManagerFragment extends Fragment implements View.OnClickListener{
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
-        View view = inflater.inflate(R.layout.fragment_id_manager,null);
+        View view = inflater.inflate(R.layout.fragment_edit_collection,null);
 
         view.findViewById(R.id.ib_back).setOnClickListener(this);
-        view.findViewById(R.id.change_password).setOnClickListener(this);
+
 
         return view;
     }
@@ -34,10 +34,7 @@ public class IdManagerFragment extends Fragment implements View.OnClickListener{
                 getFragmentManager().popBackStack();
                 break;
             }
-            case R.id.change_password:{
-                getFragmentManager().beginTransaction().replace(R.id.fragment_container,new ChangePasswordFragment()).addToBackStack(null).commit();
-                break;
-            }
+
         }
     }
 
