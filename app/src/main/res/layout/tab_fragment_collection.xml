@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <RelativeLayout
+        android:id="@+id/collection1"
+        android:layout_width="380dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:clickable="true"
+        android:background="@drawable/corners_edge"
+        >
+
+        <TextView
+            android:id="@+id/title1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="16dp"
+            android:text="旅游"
+            android:textSize="18sp"
+            android:textColor="#3A3A3A"
+            />
+
+        <View
+            android:layout_width="360dp"
+            android:layout_height="1px"
+            android:layout_marginTop="40dp"
+            android:layout_centerHorizontal="true"
+            android:background="@android:color/darker_gray" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="16dp"
+            >
+
+            <ImageView
+                android:id="@+id/user_image1"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/logo"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="10dp"
+                android:text="用户名"
+                android:textSize="18sp"
+                android:textColor="#7A7A7A"
+                />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

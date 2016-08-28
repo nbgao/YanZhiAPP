@@ -39,7 +39,7 @@ public class UserPageFragment extends Fragment implements View.OnClickListener{
                 break;
             }
             case R.id.edit_user_information:{
-                getFragmentManager().beginTransaction().replace(R.id.fragment_container,new EditEducationInformationFragment()).addToBackStack(null).commit();
+                getFragmentManager().beginTransaction().replace(R.id.fragment_container,new EditUserInformationFragment()).addToBackStack(null).commit();
                 break;
             }
             case R.id.focus_others:{

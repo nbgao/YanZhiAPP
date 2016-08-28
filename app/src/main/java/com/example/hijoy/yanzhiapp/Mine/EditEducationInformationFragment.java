@@ -19,7 +19,7 @@ public class EditEducationInformationFragment extends Fragment implements View.O
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
-        View view = inflater.inflate(R.layout.fragment_edit_user_information,null);
+        View view = inflater.inflate(R.layout.fragment_edit_education,null);
 
         view.findViewById(R.id.ib_back).setOnClickListener(this);
 
