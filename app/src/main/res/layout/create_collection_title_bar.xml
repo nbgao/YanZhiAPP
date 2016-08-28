@@ -8,7 +8,7 @@
     >
 
     <TextView
-        android:id="@+id/btn_delete_collection"
+        android:id="@+id/btn_cancel"
         android:layout_width="30dp"
         android:layout_height="match_parent"
         android:layout_marginStart="10dp"

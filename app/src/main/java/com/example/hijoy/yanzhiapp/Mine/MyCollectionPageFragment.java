@@ -6,6 +6,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 import com.example.hijoy.yanzhiapp.R;
 
@@ -23,7 +24,7 @@ public class MyCollectionPageFragment extends Fragment implements View.OnClickLi
 
         view.findViewById(R.id.ib_back).setOnClickListener(this);
         view.findViewById(R.id.btn_my_collection_edit).setOnClickListener(this);
-        view.findViewById(R.id.btn_create_commit).setOnClickListener(this);
+        view.findViewById(R.id.btn_create_collection).setOnClickListener(this);
 
         return view;
     }
@@ -33,6 +34,7 @@ public class MyCollectionPageFragment extends Fragment implements View.OnClickLi
         switch (view.getId()){
             case R.id.ib_back:{
                 getFragmentManager().popBackStack();
+                break;
             }
             case R.id.btn_my_collection_edit:{
                 getFragmentManager().beginTransaction().replace(R.id.fragment_container,new EditCollectionFragment()).addToBackStack(null).commit();

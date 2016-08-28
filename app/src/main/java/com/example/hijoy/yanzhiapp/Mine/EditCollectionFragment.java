@@ -21,20 +21,27 @@ public class EditCollectionFragment extends Fragment implements View.OnClickList
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
         View view = inflater.inflate(R.layout.fragment_edit_collection,null);
 
-        view.findViewById(R.id.ib_back).setOnClickListener(this);
-
-
+        view.findViewById(R.id.btn_delete_collection).setOnClickListener(this);
+        view.findViewById(R.id.btn_edit_commit).setOnClickListener(this);
+        view.findViewById(R.id.btn_create_collection).setOnClickListener(this);
         return view;
     }
 
     @Override
     public void onClick(View view) {
         switch (view.getId()){
-            case R.id.ib_back:{
-                getFragmentManager().popBackStack();
+            case R.id.btn_delete_collection:{
+
                 break;
             }
+            case R.id.btn_edit_commit:{
 
+                break;
+            }
+            case R.id.btn_create_collection:{
+                getFragmentManager().beginTransaction().replace(R.id.fragment_container,new CreateCollectionFragment()).addToBackStack(null).commit();
+                break;
+            }
         }
     }
 

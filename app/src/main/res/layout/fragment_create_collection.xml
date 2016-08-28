@@ -12,9 +12,9 @@
         android:layout_height="50dp"
         android:layout_marginTop="12dp"
         android:layout_gravity="center"
-        android:text=" 收藏夹标题，最多15字"
+        android:hint=" 收藏夹标题，最多15字"
         android:textSize="18sp"
-        android:textColor="#CACACA"
+        android:textColorHint="#CACACA"
         android:background="#FFFFFF"
         />
 

@@ -22,7 +22,7 @@ public class CreateCollectionFragment extends Fragment implements View.OnClickLi
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
         View view = inflater.inflate(R.layout.fragment_create_collection,null);
 
-        view.findViewById(R.id.ib_back).setOnClickListener(this);
+        view.findViewById(R.id.btn_cancel).setOnClickListener(this);
         view.findViewById(R.id.btn_create_commit).setOnClickListener(this);
 
         return view;
@@ -31,7 +31,7 @@ public class CreateCollectionFragment extends Fragment implements View.OnClickLi
     @Override
     public void onClick(View view) {
         switch (view.getId()){
-            case R.id.ib_back:{
+            case R.id.btn_cancel:{
                 getFragmentManager().popBackStack();
                 break;
             }

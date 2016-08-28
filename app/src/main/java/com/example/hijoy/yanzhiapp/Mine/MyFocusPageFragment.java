@@ -34,8 +34,12 @@ public class MyFocusPageFragment extends Fragment implements View.OnClickListene
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
         View view = inflater.inflate(R.layout.fragment_my_focus_page,null);
 
-        //initTabView();
+        mTabLayout = (TabLayout)view.findViewById(R.id.tabMyFocus);
+        mViewPager = (ViewPager)view.findViewById(R.id.tabViewPager);
+
+        initTabView();
         fManager = getFragmentManager();
+
 
         view.findViewById(R.id.ib_back).setOnClickListener(this);
 
@@ -62,8 +66,6 @@ public class MyFocusPageFragment extends Fragment implements View.OnClickListene
 
         FragmentAdapter fragmentAdapter;
 
-        mTabLayout = (TabLayout) mTabLayout.findViewById(R.id.tabMyFocus);
-        mViewPager = (ViewPager) mViewPager.findViewById(R.id.tabViewPager);
 
         mTitles.add("收藏");
         mTitles.add("帖子");
