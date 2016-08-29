@@ -1,6 +1,7 @@
 package com.example.hijoy.yanzhiapp.Mine;
 
 
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AlertDialog;
@@ -36,7 +37,22 @@ public class RecentViewsPageFragment extends Fragment implements View.OnClickLis
                 break;
             }
             case R.id.btn_recent_views_edit:{
-                AlertDialog.Builder builder = new AlertDialog.Builder(this);
+                AlertDialog.Builder dialog = new AlertDialog.Builder(getContext());
+                dialog.setMessage("确认清除全部内容吗？")
+                        .setCancelable(true)
+                        .setPositiveButton("确定", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialogInterface, int i) {
+
+                            }
+                        })
+                        .setNegativeButton("取消", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialogInterface, int i) {
+
+                            }
+                        })
+                        .show();
 
                 break;
             }

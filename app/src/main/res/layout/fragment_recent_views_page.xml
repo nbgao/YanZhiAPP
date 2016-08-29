@@ -27,7 +27,7 @@
 
         <View
             android:layout_width="match_parent"
-            android:layout_height="1px"
+            android:layout_height="0.5dp"
             android:layout_below="@+id/recent_views1"
             android:background="@android:color/darker_gray" />
 
@@ -44,7 +44,7 @@
 
         <View
             android:layout_width="match_parent"
-            android:layout_height="1px"
+            android:layout_height="0.5dp"
             android:layout_below="@+id/recent_views2"
             android:background="@android:color/darker_gray" />
 

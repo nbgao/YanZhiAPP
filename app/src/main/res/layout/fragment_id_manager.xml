@@ -47,7 +47,7 @@
 
         <View
             android:layout_width="match_parent"
-            android:layout_height="1px"
+            android:layout_height="0.5dp"
             android:layout_below="@+id/phone"
             android:background="@android:color/darker_gray" />
 
@@ -131,7 +131,7 @@
 
         <View
             android:layout_width="match_parent"
-            android:layout_height="1px"
+            android:layout_height="0.5dp"
             android:layout_below="@+id/wechat_id"
             android:background="@android:color/darker_gray" />
 
@@ -178,7 +178,7 @@
 
         <View
             android:layout_width="match_parent"
-            android:layout_height="1px"
+            android:layout_height="0.5dp"
             android:layout_below="@+id/weibo_id"
             android:background="@android:color/darker_gray" />
 
