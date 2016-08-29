@@ -3,6 +3,7 @@ package com.example.hijoy.yanzhiapp.Mine;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v7.app.AlertDialog;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -35,6 +36,7 @@ public class RecentViewsPageFragment extends Fragment implements View.OnClickLis
                 break;
             }
             case R.id.btn_recent_views_edit:{
+                AlertDialog.Builder builder = new AlertDialog.Builder(this);
 
                 break;
             }
