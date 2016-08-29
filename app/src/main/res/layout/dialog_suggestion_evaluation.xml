@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_suggestion_evaluation"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:inputType="textMultiLine"
+        android:lines="5"
+        android:gravity="top"
+        android:hint="在这里输入您的意见评价"
+        android:textColorHint="#9A9A9A"
+        />
+</LinearLayout>

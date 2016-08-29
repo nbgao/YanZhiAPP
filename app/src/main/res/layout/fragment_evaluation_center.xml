@@ -16,7 +16,7 @@
         >
 
         <RelativeLayout
-            android:id="@+id/reflect_problem"
+            android:id="@+id/feedback_problem"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:clickable="true"
@@ -45,14 +45,14 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="0.5dp"
-            android:layout_below="@+id/reflect_problem"
+            android:layout_below="@+id/feedback_problem"
             android:background="@android:color/darker_gray" />
 
         <RelativeLayout
             android:id="@+id/suggestion_evaluation"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:layout_below="@+id/reflect_problem"
+            android:layout_below="@+id/feedback_problem"
             android:clickable="true"
             android:gravity="center_vertical"
             >
