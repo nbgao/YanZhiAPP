@@ -61,11 +61,12 @@ public class SettingPageFragment extends Fragment implements View.OnClickListene
                 break;
             }
             case R.id.check_update:{
+                Toast.makeText(getActivity(),"已是最新版本",Toast.LENGTH_SHORT).show();
 
                 break;
             }
             case R.id.clear_netflow:{
-
+                Toast.makeText(getActivity(),"已经清除流量",Toast.LENGTH_SHORT).show();
                 break;
             }
             case R.id.night_mode:{

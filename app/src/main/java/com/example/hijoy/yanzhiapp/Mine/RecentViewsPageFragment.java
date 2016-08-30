@@ -27,10 +27,8 @@ public class RecentViewsPageFragment extends Fragment implements View.OnClickLis
         View view = inflater.inflate(R.layout.fragment_recent_views_page,null);
 
         view.findViewById(R.id.ib_back).setOnClickListener(this);
-        view.findViewById(R.id.btn_recent_views_edit).setOnClickListener(this);
+        view.findViewById(R.id.btn_recent_views_delete).setOnClickListener(this);
 
-        TextView tv_forget = (TextView)findViewById(R.id.tv_forget);
-        tv_forget.setText(fromHtml("<u>"+"忘记密码?"+"</u>"));
 
         return view;
     }
@@ -42,7 +40,7 @@ public class RecentViewsPageFragment extends Fragment implements View.OnClickLis
                 getFragmentManager().popBackStack();
                 break;
             }
-            case R.id.btn_recent_views_edit:{
+            case R.id.btn_recent_views_delete:{
                 AlertDialog.Builder dialog = new AlertDialog.Builder(getContext());
                 dialog.setMessage("确认清除全部内容吗？")
                         .setCancelable(true)

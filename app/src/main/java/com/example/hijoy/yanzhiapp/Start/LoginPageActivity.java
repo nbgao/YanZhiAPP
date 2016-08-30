@@ -22,7 +22,6 @@ public class LoginPageActivity extends StartPageActivity implements View.OnClick
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_login_page);
 
         TextView tv_forget = (TextView)findViewById(R.id.tv_forget);

@@ -14,7 +14,6 @@ public class RegisterPageActivity extends StartPageActivity {
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
-        //requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_register_page);
 
         final EditText editText = (EditText)findViewById(R.id.et_phone);

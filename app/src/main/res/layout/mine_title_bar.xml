@@ -7,13 +7,14 @@
     android:elevation="5dp"
     >
 
-    <ImageButton
-        android:layout_width="25dp"
-        android:layout_height="25dp"
-        android:layout_gravity="center"
-        android:layout_marginStart="15dp"
-        android:background="#FFFFFF"
-        />
+    <RelativeLayout
+        android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        >
+
+
+    </RelativeLayout>
 
     <TextView
         android:layout_width="0dp"
@@ -26,14 +27,21 @@
         android:textColor="#5E5E5E"
         />
 
-
-    <ImageButton
+    <RelativeLayout
         android:id="@+id/ib_setting"
-        android:layout_width="25dp"
-        android:layout_height="25dp"
-        android:layout_marginEnd="15dp"
-        android:layout_gravity="center"
-        android:background="@drawable/settings"
-        />
+        android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        >
+
+        <ImageView
+
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:background="@drawable/settings"
+            />
+    </RelativeLayout>
 
 </LinearLayout>

@@ -7,14 +7,22 @@
     android:elevation="5dp"
     >
 
-    <ImageButton
+    <RelativeLayout
         android:id="@+id/ib_back"
-        android:layout_width="15dp"
-        android:layout_height="30dp"
-        android:layout_gravity="center"
-        android:layout_marginStart="15dp"
-        android:background="@drawable/back"
-        />
+        android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        >
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="15dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:background="@drawable/back"
+            />
+    </RelativeLayout>
 
     <ImageView
         android:layout_width="10dp"
@@ -35,11 +43,12 @@
 
     <TextView
         android:id="@+id/btn_my_collection_edit"
-        android:layout_width="30dp"
+        android:layout_width="40dp"
         android:layout_height="match_parent"
         android:layout_marginEnd="10dp"
         android:gravity="center"
         android:text="编辑"
+        android:textSize="16sp"
         android:textColor="#65A78D"
         android:background="#FFFFFF"
         android:clickable="true"
