@@ -20,7 +20,7 @@
         />
 
     <RelativeLayout
-        android:id="@+id/rb1"
+
         android:layout_width="380dp"
         android:layout_height="50dp"
         android:layout_gravity="center"
@@ -28,7 +28,8 @@
         android:clickable="true"
         >
 
-        <RadioButton
+        <CheckBox
+            android:id="@+id/cb1"
             android:layout_width="36dp"
             android:layout_height="36dp"
             android:layout_centerVertical="true"
@@ -70,7 +71,7 @@
     </RelativeLayout>
 
     <RelativeLayout
-        android:id="@+id/rb2"
+
         android:layout_width="380dp"
         android:layout_height="50dp"
         android:layout_gravity="center"
@@ -78,7 +79,8 @@
         android:clickable="true"
         >
 
-        <RadioButton
+        <CheckBox
+            android:id="@+id/cb2"
             android:layout_width="36dp"
             android:layout_height="36dp"
             android:layout_centerVertical="true"

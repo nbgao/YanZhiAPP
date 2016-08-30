@@ -24,7 +24,7 @@
         android:layout_marginTop="40dp"
         >
 
-        <RadioButton
+        <CheckBox
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_marginStart="16dp"
