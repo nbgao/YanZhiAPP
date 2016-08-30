@@ -8,8 +8,11 @@ import android.support.v7.app.AlertDialog;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.example.hijoy.yanzhiapp.R;
+
+import static android.text.Html.fromHtml;
 
 
 public class RecentViewsPageFragment extends Fragment implements View.OnClickListener{
@@ -25,6 +28,9 @@ public class RecentViewsPageFragment extends Fragment implements View.OnClickLis
 
         view.findViewById(R.id.ib_back).setOnClickListener(this);
         view.findViewById(R.id.btn_recent_views_edit).setOnClickListener(this);
+
+        TextView tv_forget = (TextView)findViewById(R.id.tv_forget);
+        tv_forget.setText(fromHtml("<u>"+"忘记密码?"+"</u>"));
 
         return view;
     }
