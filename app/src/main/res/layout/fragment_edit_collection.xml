@@ -21,7 +21,7 @@
 
     <RelativeLayout
 
-        android:layout_width="380dp"
+        android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
@@ -32,15 +32,16 @@
             android:id="@+id/cb1"
             android:layout_width="36dp"
             android:layout_height="36dp"
+            android:layout_marginStart="10dp"
             android:layout_centerVertical="true"
             android:checked="false"
             />
 
         <RelativeLayout
             android:id="@+id/collection1"
-            android:layout_width="380dp"
+            android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:layout_marginStart="45dp"
+            android:layout_marginStart="50dp"
             android:clickable="true"
             android:background="@drawable/corners_edge"
             >
@@ -51,7 +52,7 @@
                 android:layout_centerVertical="true"
                 android:layout_marginStart="16dp"
                 android:text="收藏夹名1"
-                android:textSize="18sp"
+                android:textSize="16sp"
                 android:textColor="#5A5A5A"
                 />
 
@@ -62,7 +63,7 @@
                 android:layout_alignParentEnd="true"
                 android:layout_marginEnd="16dp"
                 android:text="2人关注"
-                android:textSize="18sp"
+                android:textSize="16sp"
                 android:textColor="#7A7A7A"
                 />
 
@@ -72,7 +73,7 @@
 
     <RelativeLayout
 
-        android:layout_width="380dp"
+        android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
@@ -83,15 +84,16 @@
             android:id="@+id/cb2"
             android:layout_width="36dp"
             android:layout_height="36dp"
+            android:layout_marginStart="10dp"
             android:layout_centerVertical="true"
             android:checked="false"
             />
 
         <RelativeLayout
             android:id="@+id/collection2"
-            android:layout_width="380dp"
+            android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:layout_marginStart="45dp"
+            android:layout_marginStart="50dp"
             android:clickable="true"
             android:background="@drawable/corners_edge"
             >
@@ -102,7 +104,7 @@
                 android:layout_centerVertical="true"
                 android:layout_marginStart="16dp"
                 android:text="收藏夹名2"
-                android:textSize="18sp"
+                android:textSize="16sp"
                 android:textColor="#5A5A5A"
                 />
 
@@ -113,7 +115,7 @@
                 android:layout_alignParentEnd="true"
                 android:layout_marginEnd="16dp"
                 android:text="2人关注"
-                android:textSize="18sp"
+                android:textSize="16sp"
                 android:textColor="#7A7A7A"
                 />
 

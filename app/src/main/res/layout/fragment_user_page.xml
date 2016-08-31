@@ -113,7 +113,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
                 android:text="个人简介:"
-                android:textSize="18sp"
+                android:textSize="16sp"
                 android:textColor="#5A5A5A"
                 />
 
@@ -121,10 +121,10 @@
                 android:id="@+id/school_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="15dp"
+                android:layout_marginStart="10dp"
                 android:layout_gravity="center"
                 android:text="杭州电子科技大学"
-                android:textSize="14sp"
+                android:textSize="13sp"
                 />
 
             <TextView
@@ -134,7 +134,7 @@
                 android:layout_marginStart="15dp"
                 android:layout_gravity="center"
                 android:text="计算机科学与技术专业"
-                android:textSize="14sp"
+                android:textSize="13sp"
                 />
 
         </LinearLayout>
@@ -153,7 +153,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
                 android:text="个人荣誉:"
-                android:textSize="18sp"
+                android:textSize="16sp"
                 android:textColor="#5A5A5A"
                 />
 
@@ -161,10 +161,10 @@
                 android:id="@+id/my_honor"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="15dp"
+                android:layout_marginStart="10dp"
                 android:layout_gravity="center"
                 android:text="获得一等奖学金"
-                android:textSize="14sp"
+                android:textSize="13sp"
                 />
 
         </LinearLayout>

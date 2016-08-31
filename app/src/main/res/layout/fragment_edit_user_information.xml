@@ -81,7 +81,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:text="性别"
-                android:textSize="18sp"
+                android:textSize="16sp"
                 android:textColor="#7A7A7A"
             />
 
@@ -90,7 +90,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="男"
-                android:textSize="18sp"
+                android:textSize="16sp"
                 android:textColor="#5A5A5A"
                 />
 
@@ -116,7 +116,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:text="居住地"
-                android:textSize="18sp"
+                android:textSize="16sp"
                 android:textColor="#7A7A7A"
                 android:clickable="true"
                 />
@@ -126,7 +126,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="浙江杭州"
-                android:textSize="18sp"
+                android:textSize="16sp"
                 android:textColor="#5A5A5A"
                 android:clickable="true"
                 />
