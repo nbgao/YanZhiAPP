@@ -48,11 +48,11 @@ public class LoginPageActivity extends StartPageActivity implements View.OnClick
                 if(et_phone.getText().toString().equals("18112345678") && et_password.getText().toString().equals("123456")){
                     Intent intent = new Intent(LoginPageActivity.this, MineActivity.class);
                     startActivity(intent);
-                    Toast.makeText(LoginPageActivity.this,"Login successfully",Toast.LENGTH_LONG).show();
+                    Toast.makeText(LoginPageActivity.this,"登录成功",Toast.LENGTH_LONG).show();
                     super.finish();
                     finish();
                 }else{
-                    Toast.makeText(LoginPageActivity.this,"Wrong",Toast.LENGTH_LONG).show();
+                    Toast.makeText(LoginPageActivity.this,"密码输入有误",Toast.LENGTH_LONG).show();
                 }
                 break;
             case R.id.ib_sina:

@@ -29,7 +29,7 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginStart="16dp"
                 android:text="标题-正文"
-                android:textSize="20sp"
+                android:textSize="18sp"
                 android:textColor="#000000"
                 />
 
@@ -38,7 +38,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="35dp"
                 android:layout_marginStart="16dp"
-                android:text="周五 15：46"
+                android:text="周五 15:46"
                 android:textSize="14sp"
                 android:textColor="#8D8D8D"
                 />

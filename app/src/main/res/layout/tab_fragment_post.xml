@@ -23,7 +23,7 @@
                 android:layout_marginTop="12dp"
 
                 android:text="QQ音乐与CMC合并了，网易云的生存前景如何？"
-                android:textSize="16sp"
+                android:textSize="15sp"
                 android:textColor="#000000"
                 />
 

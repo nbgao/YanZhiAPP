@@ -102,7 +102,7 @@
                 android:layout_marginTop="15dp"
                 android:layout_marginStart="16dp"
                 android:text="微信账号"
-                android:textSize="18sp"
+                android:textSize="16sp"
                 android:textColor="#7A7A7A"
                 />
 
@@ -123,7 +123,7 @@
                 android:layout_alignParentEnd="true"
                 android:layout_marginEnd="16dp"
                 android:layout_centerVertical="true"
-                android:checked="true"
+                android:checked="false"
                 android:theme="@style/Switch"
                 />
 
@@ -149,7 +149,7 @@
                 android:layout_marginTop="15dp"
                 android:layout_marginStart="16dp"
                 android:text="微博账号"
-                android:textSize="18sp"
+                android:textSize="16sp"
                 android:textColor="#7A7A7A"
                 />
 
@@ -170,7 +170,7 @@
                 android:layout_alignParentEnd="true"
                 android:layout_marginEnd="16dp"
                 android:layout_centerVertical="true"
-                android:checked="true"
+                android:checked="false"
                 android:theme="@style/Switch"
                 />
 
@@ -196,7 +196,7 @@
                 android:layout_marginTop="15dp"
                 android:layout_marginStart="16dp"
                 android:text="QQ账号"
-                android:textSize="18sp"
+                android:textSize="16sp"
                 android:textColor="#7A7A7A"
                 />
 
@@ -217,7 +217,7 @@
                 android:layout_alignParentEnd="true"
                 android:layout_marginEnd="16dp"
                 android:layout_centerVertical="true"
-                android:checked="true"
+                android:checked="false"
                 android:theme="@style/Switch"
                 />
 

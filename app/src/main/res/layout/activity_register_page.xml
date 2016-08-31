@@ -48,6 +48,6 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="360dp"
         android:text="您将收到验证身份的短信"
-        android:textSize="16sp"
+        android:textSize="14sp"
         />
 </RelativeLayout>

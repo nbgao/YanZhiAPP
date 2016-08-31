@@ -21,6 +21,7 @@
             android:background="#FFFFFF"
             app:tabMode="fixed"
             app:tabGravity="fill"
+            app:tabTextAppearance="@style/MyFocusTabText"
             app:tabIndicatorColor="#65A78D"
             app:tabTextColor="#7A7A7A"
             app:tabSelectedTextColor="#000000"

@@ -32,7 +32,7 @@
 
     <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="40dp"
+        android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="200dp"
         >
@@ -58,16 +58,30 @@
 
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/tv_forget"
+    <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="245dp"
-        android:layout_marginStart="105dp"
-        android:text="忘记密码?"
-        android:textColor="#4D4D4D"
-        android:textSize="12sp"
-        />
+        >
+
+        <TextView
+            android:id="@+id/tv_forget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="忘记密码?"
+            android:textColor="#4D4D4D"
+            android:textSize="12sp"
+            />
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            />
+
+    </LinearLayout>
+
 
     <Button
         android:id="@+id/btn_login"

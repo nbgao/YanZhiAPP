@@ -5,16 +5,16 @@
     android:layout_height="match_parent">
 
     <EditText
-        android:layout_width="300dp"
+        android:layout_width="280dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:lines="1"
         android:hint="在这里输入您的邮箱"
-        android:textColorHint="#9A9A9A"
+        android:textColorHint="#CACACA"
         />
 
     <EditText
-        android:layout_width="300dp"
+        android:layout_width="280dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="10dp"
@@ -22,6 +22,6 @@
         android:lines="5"
         android:gravity="top"
         android:hint="在这里输入您的问题反馈"
-        android:textColorHint="#9A9A9A"
+        android:textColorHint="#CACACA"
         />
 </LinearLayout>
