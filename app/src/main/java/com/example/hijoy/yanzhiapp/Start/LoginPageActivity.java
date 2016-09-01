@@ -56,13 +56,13 @@ public class LoginPageActivity extends StartPageActivity implements View.OnClick
                 }
                 break;
             case R.id.ib_sina:
-                Toast.makeText(LoginPageActivity.this,"Login by Sina",Toast.LENGTH_LONG).show();
+                Toast.makeText(LoginPageActivity.this,"通过微博登录",Toast.LENGTH_LONG).show();
                 break;
             case R.id.ib_qq:
-                Toast.makeText(LoginPageActivity.this,"Login by QQ",Toast.LENGTH_LONG).show();
+                Toast.makeText(LoginPageActivity.this,"通过QQ登录",Toast.LENGTH_LONG).show();
                 break;
             case R.id.ib_wechat:
-                Toast.makeText(LoginPageActivity.this,"Login by WeChat",Toast.LENGTH_LONG).show();
+                Toast.makeText(LoginPageActivity.this,"通过微信登录",Toast.LENGTH_LONG).show();
                 break;
 
         }
