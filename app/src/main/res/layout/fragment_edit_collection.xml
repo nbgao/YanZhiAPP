@@ -39,7 +39,7 @@
 
         <RelativeLayout
             android:id="@+id/collection1"
-            android:layout_width="match_parent"
+            android:layout_width="320dp"
             android:layout_height="50dp"
             android:layout_marginStart="50dp"
             android:clickable="true"
@@ -91,7 +91,7 @@
 
         <RelativeLayout
             android:id="@+id/collection2"
-            android:layout_width="match_parent"
+            android:layout_width="320dp"
             android:layout_height="50dp"
             android:layout_marginStart="50dp"
             android:clickable="true"
