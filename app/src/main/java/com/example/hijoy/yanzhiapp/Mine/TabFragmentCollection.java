@@ -8,7 +8,7 @@ import android.view.ViewGroup;
 
 import com.example.hijoy.yanzhiapp.R;
 
-public class TabFragmentCollection extends Fragment {
+public class TabFragmentCollection extends MinePageFragment implements View.OnClickListener{
 
     protected View view;
 
@@ -17,6 +17,11 @@ public class TabFragmentCollection extends Fragment {
         view = inflater.inflate(R.layout.tab_fragment_collection,container,false);
 
         return view;
+    }
+
+    @Override
+    public void onClick(View v) {
+
     }
 
 }

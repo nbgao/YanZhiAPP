@@ -75,17 +75,37 @@ public class MyFocusPageFragment extends Fragment implements View.OnClickListene
         mFragmentList.add(tabFragmentPost);
         mFragmentList.add(tabFragmentTopic);
 
+        mTabLayout.setOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
+            @Override
+            public void onTabSelected(TabLayout.Tab tab) {
+                mViewPager.setCurrentItem(tab.getPosition());
+            }
+
+            @Override
+            public void onTabUnselected(TabLayout.Tab tab) {
+
+            }
+
+            @Override
+            public void onTabReselected(TabLayout.Tab tab) {
+
+            }
+        });
+
         mTabLayout.setTabMode(TabLayout.MODE_FIXED);
         mTabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
         mTabLayout.addTab(mTabLayout.newTab().setText(mTitles.get(0)));
         mTabLayout.addTab(mTabLayout.newTab().setText(mTitles.get(1)));
         mTabLayout.addTab(mTabLayout.newTab().setText(mTitles.get(2)));
 
+        mViewPager.setOffscreenPageLimit(0);
+
         fragmentAdapter = new FragmentAdapter(getFragmentManager(),mTitles,mFragmentList);
         mViewPager.setAdapter(fragmentAdapter);
         mTabLayout.setupWithViewPager(mViewPager);
 
     }
+
 
 
     @Override
