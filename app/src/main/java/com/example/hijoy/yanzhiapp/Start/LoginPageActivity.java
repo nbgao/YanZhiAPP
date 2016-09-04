@@ -47,10 +47,14 @@ public class LoginPageActivity extends StartPageActivity implements View.OnClick
             case R.id.btn_login:
                 if(et_phone.getText().toString().equals("18112345678") && et_password.getText().toString().equals("123456")){
                     Intent intent = new Intent(LoginPageActivity.this, MineActivity.class);
+                    intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                     startActivity(intent);
+
                     Toast.makeText(LoginPageActivity.this,"登录成功",Toast.LENGTH_LONG).show();
-                    super.finish();
+
+                    StartPageActivity.instance.finish();
                     finish();
+
                 }else{
                     Toast.makeText(LoginPageActivity.this,"密码输入有误",Toast.LENGTH_LONG).show();
                 }
