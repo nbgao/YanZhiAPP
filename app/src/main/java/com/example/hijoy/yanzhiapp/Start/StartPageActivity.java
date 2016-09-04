@@ -12,13 +12,13 @@ import com.example.hijoy.yanzhiapp.R;
 
 public class StartPageActivity extends AppCompatActivity implements View.OnClickListener {
 
-    static StartPageActivity instance;
+    public static StartPageActivity instance;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_start_page);
 
-        instance = this;
+        instance = StartPageActivity.this;
 
         Button button_login = (Button)findViewById(R.id.btn_login);
         Button button_register = (Button)findViewById(R.id.btn_register);
