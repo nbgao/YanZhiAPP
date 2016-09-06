@@ -1,5 +1,6 @@
 package com.example.hijoy.yanzhiapp.Mine;
 
+import android.app.Activity;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.KeyEvent;
@@ -12,7 +13,6 @@ import com.example.hijoy.yanzhiapp.R;
 
 
 public class MinePageFragment extends Fragment implements View.OnClickListener {
-
 
     @Override
     public void onCreate(Bundle savedInstanceState){
@@ -74,8 +74,6 @@ public class MinePageFragment extends Fragment implements View.OnClickListener {
             }
         }
     }
-
-
 
 
     @Override

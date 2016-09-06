@@ -53,7 +53,7 @@ public class LoginPageActivity extends StartPageActivity implements View.OnClick
                     Toast.makeText(LoginPageActivity.this,"登录成功",Toast.LENGTH_LONG).show();
 
                     /*StartPageActivity.instance.finish();*/
-                    this.finish();
+                    finish();
 
                 }else{
                     Toast.makeText(LoginPageActivity.this,"密码输入有误",Toast.LENGTH_LONG).show();
@@ -71,7 +71,6 @@ public class LoginPageActivity extends StartPageActivity implements View.OnClick
 
         }
     }
-
 
 
     public void onBackPressed(){
