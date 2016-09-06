@@ -2,9 +2,11 @@ package com.example.hijoy.yanzhiapp.Mine;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import com.example.hijoy.yanzhiapp.R;
 
@@ -31,28 +33,6 @@ public class MinePageFragment extends Fragment implements View.OnClickListener {
         view.findViewById(R.id.personal_wallet).setOnClickListener(this);
         view.findViewById(R.id.my_vip).setOnClickListener(this);
 
-        /*
-        view.findViewById(R.id.ib_setting).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                getFragmentManager()
-                        .beginTransaction()
-                        .replace(R.id.fragment_container,new SettingPageFragment())
-                        .addToBackStack(null)
-                        .commit();
-            }
-        });
-        view.findViewById(R.id.user).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                getFragmentManager()
-                        .beginTransaction()
-                        .replace(R.id.fragment_container,new UserPageFragment())
-                        .addToBackStack(null)
-                        .commit();
-
-            }
-        });*/
 
         return view;
     }
@@ -94,6 +74,9 @@ public class MinePageFragment extends Fragment implements View.OnClickListener {
             }
         }
     }
+
+
+
 
     @Override
     public void onPause(){
