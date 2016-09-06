@@ -32,7 +32,7 @@ public class StartPageActivity extends AppCompatActivity implements View.OnClick
         switch (v.getId()){
             case R.id.btn_login:
                 startActivity(new Intent(StartPageActivity.this,LoginPageActivity.class));
-                //finish();
+                finish();
                 break;
             case R.id.btn_register:
                 startActivity( new Intent(StartPageActivity.this,RegisterPageActivity.class));

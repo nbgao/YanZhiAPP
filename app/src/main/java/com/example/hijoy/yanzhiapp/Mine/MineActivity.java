@@ -2,12 +2,13 @@ package com.example.hijoy.yanzhiapp.Mine;
 
 
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 
 import com.example.hijoy.yanzhiapp.R;
-import com.example.hijoy.yanzhiapp.Start.LoginPageActivity;
 
 
-public class MineActivity extends LoginPageActivity{
+
+public class MineActivity extends AppCompatActivity {
 
 
     protected void onCreate(Bundle savedInstanceState){
@@ -28,6 +29,5 @@ public class MineActivity extends LoginPageActivity{
 
         }
     }
-
 
 }
