@@ -7,10 +7,11 @@
 
     <include layout="@layout/message_notification_title_bar" />
 
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
+        android:orientation="vertical"
         android:background="#FFFFFF"
         android:elevation="1dp"
         >
@@ -19,8 +20,9 @@
             android:id="@+id/switch1"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:clickable="true"
             android:gravity="center_vertical"
+            android:background="@drawable/select_ripple2"
+            android:clickable="true"
             >
 
             <TextView
@@ -46,16 +48,15 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="0.5dp"
-            android:layout_below="@+id/switch1"
             android:background="@android:color/darker_gray" />
 
         <RelativeLayout
             android:id="@+id/switch2"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:layout_below="@+id/switch1"
-            android:clickable="true"
             android:gravity="center_vertical"
+            android:background="@drawable/select_ripple2"
+            android:clickable="true"
             >
 
             <TextView
@@ -81,16 +82,15 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="0.5dp"
-            android:layout_below="@+id/switch2"
             android:background="@android:color/darker_gray" />
 
         <RelativeLayout
             android:id="@+id/switch3"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:layout_below="@+id/switch2"
-            android:clickable="true"
             android:gravity="center_vertical"
+            android:background="@drawable/select_ripple2"
+            android:clickable="true"
             >
 
             <TextView
@@ -116,16 +116,15 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="0.5dp"
-            android:layout_below="@+id/switch3"
             android:background="@android:color/darker_gray" />
 
         <RelativeLayout
             android:id="@+id/switch4"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:layout_below="@+id/switch3"
-            android:clickable="true"
             android:gravity="center_vertical"
+            android:background="@drawable/select_ripple2"
+            android:clickable="true"
             >
 
             <TextView
@@ -149,6 +148,6 @@
         </RelativeLayout>
 
 
-    </RelativeLayout>
+    </LinearLayout>
 
 </LinearLayout>

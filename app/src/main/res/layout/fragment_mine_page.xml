@@ -13,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:layout_marginTop="12dp"
-        android:background="#FFFFFF"
+        android:background="@drawable/select_ripple2"
         android:elevation="1dp"
         >
 
@@ -58,10 +58,11 @@
 
     </RelativeLayout>
 
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        android:orientation="vertical"
         android:background="#FFFFFF"
         android:elevation="1dp"
         >
@@ -70,8 +71,9 @@
             android:id="@+id/my_focus"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:clickable="true"
             android:gravity="center_vertical"
+            android:background="@drawable/select_ripple2"
+            android:clickable="true"
             >
 
             <ImageButton
@@ -103,16 +105,15 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="0.5dp"
-            android:layout_below="@+id/my_focus"
             android:background="@android:color/darker_gray" />
 
         <RelativeLayout
             android:id="@+id/my_collection"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:layout_below="@+id/my_focus"
-            android:clickable="true"
             android:gravity="center_vertical"
+            android:background="@drawable/select_ripple2"
+            android:clickable="true"
             >
 
             <ImageButton
@@ -144,16 +145,15 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="0.5dp"
-            android:layout_below="@+id/my_collection"
             android:background="@android:color/darker_gray" />
 
         <RelativeLayout
             android:id="@+id/my_script"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:layout_below="@+id/my_collection"
-            android:clickable="true"
             android:gravity="center_vertical"
+            android:background="@drawable/select_ripple2"
+            android:clickable="true"
             >
 
             <ImageButton
@@ -185,16 +185,15 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="0.5dp"
-            android:layout_below="@+id/my_script"
             android:background="@android:color/darker_gray" />
 
         <RelativeLayout
             android:id="@+id/recent_views"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:layout_below="@+id/my_script"
-            android:clickable="true"
             android:gravity="center_vertical"
+            android:background="@drawable/select_ripple2"
+            android:clickable="true"
             >
 
             <ImageButton
@@ -226,16 +225,15 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="0.5dp"
-            android:layout_below="@+id/recent_views"
             android:background="@android:color/darker_gray" />
 
         <RelativeLayout
             android:id="@+id/personal_wallet"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:layout_below="@+id/recent_views"
-            android:clickable="true"
             android:gravity="center_vertical"
+            android:background="@drawable/select_ripple2"
+            android:clickable="true"
             >
 
             <ImageButton
@@ -267,16 +265,15 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="0.5dp"
-            android:layout_below="@+id/personal_wallet"
             android:background="@android:color/darker_gray" />
 
         <RelativeLayout
             android:id="@+id/my_vip"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:layout_below="@+id/personal_wallet"
-            android:clickable="true"
             android:gravity="center_vertical"
+            android:background="@drawable/select_ripple2"
+            android:clickable="true"
             >
 
             <ImageButton
@@ -307,6 +304,6 @@
 
 
 
-    </RelativeLayout>
+    </LinearLayout>
 
 </LinearLayout>

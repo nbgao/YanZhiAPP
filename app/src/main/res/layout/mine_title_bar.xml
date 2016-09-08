@@ -8,11 +8,10 @@
     >
 
     <RelativeLayout
-        android:layout_width="40dp"
+        android:layout_width="50dp"
         android:layout_height="match_parent"
         android:clickable="true"
         >
-
 
     </RelativeLayout>
 
@@ -29,8 +28,9 @@
 
     <RelativeLayout
         android:id="@+id/ib_setting"
-        android:layout_width="40dp"
+        android:layout_width="50dp"
         android:layout_height="match_parent"
+        android:background="@drawable/select_ripple1"
         android:clickable="true"
         >
 
@@ -38,7 +38,7 @@
 
             android:layout_width="25dp"
             android:layout_height="25dp"
-            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"
             android:layout_gravity="center"
             android:background="@drawable/settings"
             />

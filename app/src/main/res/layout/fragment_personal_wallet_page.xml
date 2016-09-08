@@ -14,7 +14,7 @@
         android:layout_height="150dp"
 
         android:background="#8F9092"
-        android:elevation="1dp"
+        android:elevation="2dp"
         >
 
         <TextView
@@ -50,10 +50,11 @@
 
     </RelativeLayout>
 
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
+        android:orientation="vertical"
         android:background="#FFFFFF"
         android:elevation="1dp"
         android:clickable="true"
@@ -63,8 +64,9 @@
             android:id="@+id/wechat_pay"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:clickable="true"
             android:gravity="center_vertical"
+            android:background="@drawable/select_ripple2"
+            android:clickable="true"
             >
 
         
@@ -90,16 +92,15 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="0.5dp"
-            android:layout_below="@+id/wechat_pay"
             android:background="@android:color/darker_gray" />
 
         <RelativeLayout
             android:id="@+id/alipay_pay"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:layout_below="@+id/wechat_pay"
-            android:clickable="true"
             android:gravity="center_vertical"
+            android:background="@drawable/select_ripple2"
+            android:clickable="true"
             >
 
             <TextView
@@ -121,6 +122,6 @@
 
         </RelativeLayout>
 
-    </RelativeLayout>
+    </LinearLayout>
 
 </LinearLayout>

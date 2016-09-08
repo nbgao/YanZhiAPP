@@ -15,8 +15,8 @@
         android:text="+ 创建收藏夹"
         android:textSize="18sp"
         android:textColor="#5A5A5A"
-        android:background="#FFFFFF"
-
+        android:background="@drawable/select_ripple1"
+        android:clickable="true"
         />
 
     <RelativeLayout

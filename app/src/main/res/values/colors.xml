@@ -4,4 +4,17 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
     <color name="colorLightBlue">#0681FF</color>
+
+    <color name="colorWhite">#FFFFFF</color>
+
+    <color name="colorGray_DA">#DADADA</color>
+    <color name="colorGray_CA">#CACACA</color>
+    <color name="colorGray_BA">#BABABA</color>
+    <color name="colorGray_9A">#9A9A9A</color>
+    <color name="colorGray_7A">#7A7A7A</color>
+    <color name="colorGray_5A">#5A5A5A</color>
+    <color name="colorGray_3A">#3A3A3A</color>
+    <color name="colorGray_1A">#1A1A1A</color>
+
+    <color name="colorBlack">#000000</color>
 </resources>

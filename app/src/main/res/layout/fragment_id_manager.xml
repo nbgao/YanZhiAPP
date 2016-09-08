@@ -8,10 +8,11 @@
 
     <include layout="@layout/id_manager_title_bar"  />
 
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
+        android:orientation="vertical"
         android:background="#FFFFFF"
         android:elevation="1dp"
         >
@@ -48,14 +49,13 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="0.5dp"
-            android:layout_below="@+id/phone"
             android:background="@android:color/darker_gray" />
 
         <RelativeLayout
             android:id="@+id/change_password"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:layout_below="@+id/phone"
+            android:background="@drawable/select_ripple2"
             android:clickable="true"
             android:gravity="center_vertical"
             >
@@ -79,12 +79,13 @@
 
         </RelativeLayout>
 
-    </RelativeLayout>
+    </LinearLayout>
 
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
+        android:orientation="vertical"
         android:background="#FFFFFF"
         android:elevation="1dp"
         >
@@ -93,6 +94,7 @@
             android:id="@+id/wechat_id"
             android:layout_width="match_parent"
             android:layout_height="60dp"
+            android:background="@drawable/select_ripple2"
             android:clickable="true"
             >
 
@@ -132,14 +134,13 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="0.5dp"
-            android:layout_below="@+id/wechat_id"
             android:background="@android:color/darker_gray" />
 
         <RelativeLayout
             android:id="@+id/weibo_id"
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:layout_below="@+id/wechat_id"
+            android:background="@drawable/select_ripple2"
             android:clickable="true"
             >
 
@@ -179,14 +180,13 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="0.5dp"
-            android:layout_below="@+id/weibo_id"
             android:background="@android:color/darker_gray" />
 
         <RelativeLayout
             android:id="@+id/qq_id"
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:layout_below="@+id/weibo_id"
+            android:background="@drawable/select_ripple2"
             android:clickable="true"
             >
 
@@ -223,7 +223,7 @@
 
         </RelativeLayout>
 
-    </RelativeLayout>
+    </LinearLayout>
 
 
 </LinearLayout>

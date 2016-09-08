@@ -7,10 +7,11 @@
 
     <include layout="@layout/my_essays_title_bar" />
 
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="12dp"
+        android:orientation="vertical"
         android:background="#FFFFFF"
         android:elevation="1dp"
         >
@@ -19,6 +20,7 @@
             android:id="@+id/essay1"
             android:layout_width="match_parent"
             android:layout_height="70dp"
+            android:background="@drawable/select_ripple2"
             android:clickable="true"
             >
 
@@ -79,14 +81,13 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="0.5dp"
-            android:layout_below="@+id/essay1"
             android:background="@android:color/darker_gray" />
 
         <RelativeLayout
             android:id="@+id/essay2"
             android:layout_width="match_parent"
             android:layout_height="70dp"
-            android:layout_below="@+id/essay1"
+            android:background="@drawable/select_ripple2"
             android:clickable="true"
             >
 
@@ -95,9 +96,8 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="0.5dp"
-            android:layout_below="@+id/essay2"
             android:background="@android:color/darker_gray" />
 
-    </RelativeLayout>
+    </LinearLayout>
 
 </LinearLayout>

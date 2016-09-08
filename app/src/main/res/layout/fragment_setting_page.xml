@@ -8,10 +8,11 @@
     <include layout="@layout/setting_title_bar" />
 
 
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
+        android:orientation="vertical"
         android:background="#FFFFFF"
         android:elevation="1dp"
         >
@@ -20,8 +21,9 @@
             android:id="@+id/id_manager"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:clickable="true"
+            android:background="@drawable/select_ripple2"
             android:gravity="center_vertical"
+            android:clickable="true"
             >
 
             <TextView
@@ -46,16 +48,15 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="0.5dp"
-            android:layout_below="@+id/id_manager"
             android:background="@android:color/darker_gray" />
 
         <RelativeLayout
             android:id="@+id/message_notification"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:layout_below="@+id/id_manager"
-            android:clickable="true"
+            android:background="@drawable/select_ripple2"
             android:gravity="center_vertical"
+            android:clickable="true"
             >
 
             <TextView
@@ -80,16 +81,15 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="0.5dp"
-            android:layout_below="@+id/message_notification"
             android:background="@android:color/darker_gray" />
 
         <RelativeLayout
             android:id="@+id/font_size"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:layout_below="@+id/message_notification"
-            android:clickable="true"
+            android:background="@drawable/select_ripple2"
             android:gravity="center_vertical"
+            android:clickable="true"
             >
 
             <TextView
@@ -114,16 +114,15 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="0.5dp"
-            android:layout_below="@+id/font_size"
             android:background="@android:color/darker_gray" />
 
         <RelativeLayout
             android:id="@+id/evaluation_center"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:layout_below="@+id/font_size"
-            android:clickable="true"
+            android:background="@drawable/select_ripple2"
             android:gravity="center_vertical"
+            android:clickable="true"
             >
 
             <TextView
@@ -148,16 +147,15 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="0.5dp"
-            android:layout_below="@+id/evaluation_center"
             android:background="@android:color/darker_gray" />
 
         <RelativeLayout
             android:id="@+id/check_update"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:layout_below="@+id/evaluation_center"
-            android:clickable="true"
+            android:background="@drawable/select_ripple2"
             android:gravity="center_vertical"
+            android:clickable="true"
             >
 
             <TextView
@@ -182,16 +180,15 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="0.5dp"
-            android:layout_below="@+id/check_update"
             android:background="@android:color/darker_gray" />
 
         <RelativeLayout
             android:id="@+id/clear_netflow"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:layout_below="@+id/check_update"
-            android:clickable="true"
+            android:background="@drawable/select_ripple2"
             android:gravity="center_vertical"
+            android:clickable="true"
             >
 
             <TextView
@@ -217,16 +214,15 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="0.5dp"
-            android:layout_below="@+id/clear_netflow"
             android:background="@android:color/darker_gray" />
 
         <RelativeLayout
             android:id="@+id/night_mode"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:layout_below="@+id/clear_netflow"
-            android:clickable="true"
             android:gravity="center_vertical"
+            android:background="@drawable/select_ripple2"
+            android:clickable="true"
             >
 
             <TextView
@@ -243,13 +239,13 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
                 android:layout_marginEnd="16dp"
-                android:checked="true"
+
                 android:theme="@style/Switch"
                 />
 
         </RelativeLayout>
 
-    </RelativeLayout>
+    </LinearLayout>
 
     <Button
         android:id="@+id/btn_exit_id"

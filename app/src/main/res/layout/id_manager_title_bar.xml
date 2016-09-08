@@ -12,6 +12,7 @@
         android:id="@+id/ib_back"
         android:layout_width="40dp"
         android:layout_height="match_parent"
+        android:background="@drawable/select_ripple1"
         android:clickable="true"
         >
 
