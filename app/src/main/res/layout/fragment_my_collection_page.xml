@@ -25,8 +25,9 @@
         android:layout_height="50dp"
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
-        android:background="@drawable/corners_edge"
+        android:background="@drawable/border_corners"
         android:clickable="true"
+        android:elevation="1dp"
         >
 
         <TextView
@@ -58,8 +59,9 @@
         android:layout_height="50dp"
         android:layout_gravity="center"
         android:layout_marginTop="12dp"
-        android:background="@drawable/corners_edge"
+        android:background="@drawable/border_corners"
         android:clickable="true"
+        android:elevation="1dp"
         >
 
         <TextView

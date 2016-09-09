@@ -43,7 +43,8 @@
             android:layout_height="50dp"
             android:layout_marginStart="50dp"
             android:clickable="true"
-            android:background="@drawable/corners_edge"
+            android:background="@drawable/border_corners"
+            android:elevation="1dp"
             >
 
             <TextView
@@ -95,7 +96,8 @@
             android:layout_height="50dp"
             android:layout_marginStart="50dp"
             android:clickable="true"
-            android:background="@drawable/corners_edge"
+            android:background="@drawable/border_corners"
+            android:elevation="1dp"
             >
 
             <TextView
