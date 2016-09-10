@@ -14,8 +14,6 @@ import android.widget.Toast;
 
 import com.example.hijoy.yanzhiapp.R;
 
-import static com.example.hijoy.yanzhiapp.R.id.switch1;
-import static com.example.hijoy.yanzhiapp.R.id.switch_night_mode;
 
 
 public class SettingPageFragment extends Fragment implements View.OnClickListener{
@@ -34,7 +32,7 @@ public class SettingPageFragment extends Fragment implements View.OnClickListene
         View view = inflater.inflate(R.layout.fragment_setting_page,null);
 
         view.findViewById(R.id.ib_back).setOnClickListener(this);
-        view.findViewById(R.id.id_manager).setOnClickListener(this);
+        view.findViewById(R.id.id_management).setOnClickListener(this);
         view.findViewById(R.id.message_notification).setOnClickListener(this);
         view.findViewById(R.id.font_size).setOnClickListener(this);
         view.findViewById(R.id.evaluation_center).setOnClickListener(this);
@@ -61,8 +59,8 @@ public class SettingPageFragment extends Fragment implements View.OnClickListene
                 getFragmentManager().popBackStack();
                 break;
             }
-            case R.id.id_manager:{
-                getFragmentManager().beginTransaction().replace(R.id.fragment_container,new IdManagerFragment()).addToBackStack(null).commit();
+            case R.id.id_management:{
+                getFragmentManager().beginTransaction().replace(R.id.fragment_container,new IdManagementFragment()).addToBackStack(null).commit();
                 break;
             }
             case R.id.message_notification:{

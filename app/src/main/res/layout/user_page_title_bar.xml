@@ -9,7 +9,7 @@
 
     <RelativeLayout
         android:id="@+id/ib_back"
-        android:layout_width="40dp"
+        android:layout_width="50dp"
         android:layout_height="match_parent"
         android:background="@drawable/select_ripple1"
         android:clickable="true"
@@ -37,13 +37,21 @@
         android:textColor="#5E5E5E"
         />
 
-    <ImageButton
+    <RelativeLayout
         android:id="@+id/edit_user_information"
-        android:layout_width="20dp"
-        android:layout_height="25dp"
-        android:layout_marginEnd="20dp"
-        android:layout_gravity="center"
-        android:background="@drawable/paper_list"
-        />
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/select_ripple1"
+        android:clickable="true"
+        >
+
+        <ImageButton
+            android:layout_width="20dp"
+            android:layout_height="25dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:background="@drawable/paper_list"
+            />
+    </RelativeLayout>
 
 </LinearLayout>
