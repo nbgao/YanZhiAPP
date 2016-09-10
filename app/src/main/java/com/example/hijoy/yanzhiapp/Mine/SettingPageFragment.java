@@ -8,16 +8,25 @@ import android.support.v7.app.AlertDialog;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.CompoundButton;
+import android.widget.Switch;
 import android.widget.Toast;
 
 import com.example.hijoy.yanzhiapp.R;
 
+import static com.example.hijoy.yanzhiapp.R.id.switch1;
+import static com.example.hijoy.yanzhiapp.R.id.switch_night_mode;
+
 
 public class SettingPageFragment extends Fragment implements View.OnClickListener{
+
+    Switch switch_night_mode;
 
     @Override
     public void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
+
+
     }
 
     @Override
@@ -33,6 +42,14 @@ public class SettingPageFragment extends Fragment implements View.OnClickListene
         view.findViewById(R.id.clear_netflow).setOnClickListener(this);
         view.findViewById(R.id.night_mode).setOnClickListener(this);
         view.findViewById(R.id.btn_exit_id).setOnClickListener(this);
+
+        switch_night_mode =(Switch) view.findViewById(R.id.switch_night_mode);
+        switch_night_mode.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+
+            }
+        });
 
         return view;
     }
@@ -70,7 +87,11 @@ public class SettingPageFragment extends Fragment implements View.OnClickListene
                 break;
             }
             case R.id.night_mode:{
-
+                if(switch_night_mode.isChecked()){
+                    switch_night_mode.setChecked(false);
+                }else{
+                    switch_night_mode.setChecked(true);
+                }
                 break;
             }
             case R.id.btn_exit_id:{
