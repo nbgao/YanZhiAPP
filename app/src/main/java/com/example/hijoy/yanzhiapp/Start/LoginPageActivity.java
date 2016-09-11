@@ -62,7 +62,9 @@ public class LoginPageActivity extends StartPageActivity implements View.OnClick
                 }
                 break;
             case R.id.tv_forget:{
-
+                Intent intent = new Intent(LoginPageActivity.this,ForgetPasswordActivity.class);
+                startActivity(intent);
+                break;
             }
             case R.id.ib_sina: {
                 Toast.makeText(LoginPageActivity.this, "通过微博登录", Toast.LENGTH_LONG).show();
