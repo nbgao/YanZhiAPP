@@ -71,10 +71,10 @@
             android:id="@+id/tv_forget"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
             android:text="忘记密码?"
             android:textColor="#4D4D4D"
             android:textSize="12sp"
+            android:clickable="true"
             />
 
         <ImageView

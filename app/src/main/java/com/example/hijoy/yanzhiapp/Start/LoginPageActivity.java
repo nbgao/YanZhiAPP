@@ -39,6 +39,8 @@ public class LoginPageActivity extends StartPageActivity implements View.OnClick
         imageButton_sina.setOnClickListener(this);
         imageButton_qq.setOnClickListener(this);
         imageButton_wechat.setOnClickListener(this);
+        tv_forget.setOnClickListener(this);
+
     }
 
     @Override
@@ -59,15 +61,21 @@ public class LoginPageActivity extends StartPageActivity implements View.OnClick
                     Toast.makeText(LoginPageActivity.this,"密码输入有误",Toast.LENGTH_LONG).show();
                 }
                 break;
-            case R.id.ib_sina:
-                Toast.makeText(LoginPageActivity.this,"通过微博登录",Toast.LENGTH_LONG).show();
+            case R.id.tv_forget:{
+
+            }
+            case R.id.ib_sina: {
+                Toast.makeText(LoginPageActivity.this, "通过微博登录", Toast.LENGTH_LONG).show();
                 break;
-            case R.id.ib_qq:
+            }
+            case R.id.ib_qq:{
                 Toast.makeText(LoginPageActivity.this,"通过QQ登录",Toast.LENGTH_LONG).show();
                 break;
-            case R.id.ib_wechat:
+            }
+            case R.id.ib_wechat:{
                 Toast.makeText(LoginPageActivity.this,"通过微信登录",Toast.LENGTH_LONG).show();
                 break;
+            }
 
         }
     }
